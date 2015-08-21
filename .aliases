@@ -1,0 +1,54 @@
+# --------------------------------------------------
+# Git
+# --------------------------------------------------
+alias g="git"
+
+# --------------------------------------------------
+# Dir jumping and listing
+# --------------------------------------------------
+alias ..="cd .."
+alias ...="cd .. ; cd .."
+
+alias ls="ls -G" # list
+alias la="ls -Ga" # list all, includes dot files
+alias ll="ls -Gl" # long list, excludes dot files
+alias lla="ls -Gla" # long list all, includes dot files
+
+# --------------------------------------------------
+# Tools
+# --------------------------------------------------
+
+# top RAM and CPU
+alias tram="top -o vsize"
+alias tcpu="top -o cpu"
+
+# Highlighted grep
+alias grep="grep --color=auto"
+
+# get ip
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+# Kill all the tabs in Chrome to free up memory
+# explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# --------------------------------------------------
+# Mac Stuff
+# --------------------------------------------------
+
+# Copy file path from finder to the clipboard
+# src: http://apple.stackexchange.com/a/5495
+function fp { osascript -e 'tell application "Finder"'\
+ -e "if (${1-1} <= (count Finder windows)) then"\
+ -e "get POSIX path of (target of window ${1-1} as alias)"\
+ -e 'else' -e 'get POSIX path of (desktop as alias)'\
+ -e 'end if' -e 'end tell'; };\
+
+## alias to copy it to the clipboard
+alias cfp='fp | pbcopy'
+alias cdfp='cd "$(fp)"'
+
+# Change working directory to the top-most Finder window location
+function cdf() { # short for `cdfinder`
+    cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
+}
