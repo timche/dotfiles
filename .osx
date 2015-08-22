@@ -53,6 +53,9 @@ defaults write NSGlobalDomain AppleInterfaceStyle Dark
 # Menu Bar
 # --------------------------------------------------
 
+# Show Date
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d. MMM HH:mm"
+
 # Menu bar: hide the Time Machine and User icons
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
 	defaults write "${domain}" dontAutoLoad -array \
