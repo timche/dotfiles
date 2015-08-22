@@ -179,6 +179,15 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.terminal StringEncodings -array 4
 
 # --------------------------------------------------
+# Privacy
+# --------------------------------------------------
+
+# Fix Mac OS X
+wget https://fix-macosx.com/fix-macosx.py
+python fix-macosx.py
+rm fix-macosx.py
+
+# --------------------------------------------------
 # Kill affected Applications
 # --------------------------------------------------
 
