@@ -9,18 +9,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 brew upgrade
 
-# Install newer GNU core utilities
-# add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
-
-# Install Bash 4
-# Add `/usr/local/bin/bash` to `/etc/shells`
-brew install bash
-brew install bash-completion
-
-brew install wget --with-iri
-
 # Tools
 brew install git
 
