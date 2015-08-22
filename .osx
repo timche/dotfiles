@@ -56,12 +56,11 @@ defaults write NSGlobalDomain AppleInterfaceStyle Dark
 # Show Date
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d. MMM HH:mm"
 
-# Menu bar: hide the Time Machine and User icons
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
+# Show Battery Percent
+defaults write com.apple.menuextra.battery ShowPercent -bool true
+
+# Disable fast user switching
+defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool NO
 
 # --------------------------------------------------
 # Bluetooth
@@ -286,7 +285,7 @@ tell application "Terminal"
 	(* Open the custom theme so that it gets added to the list
 	   of available terminal themes (note: this will open two
 	   additional terminal windows). *)
-	do shell script "open '$HOME/init/" & themeName & ".terminal'"
+	do shell script "open 'init/" & themeName & ".terminal'"
 	(* Wait a little bit to ensure that the custom theme is added. *)
 	delay 1
 	(* Set the custom theme as the default terminal theme. *)
