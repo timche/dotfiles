@@ -6,7 +6,7 @@ xcode-select --install;
 function doIt() {
     rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh"\
     --exclude ".osx" --exclude ".brews" --exclude ".casks"\
-    --exclude "README.md" --exclude "LICENSE" -avh --no-perms . ~;
+    --exclude "README.md" --exclude "Vagrantfile" --exclude "LICENSE" -avh --no-perms . ~;
     source ~/.bash_profile;
 }
 

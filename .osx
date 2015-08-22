@@ -94,7 +94,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # --------------------------------------------------
 
 # Set global language
-languagesetup -langspec en
+sudo languagesetup -langspec en
 
 # Set language and text formats
 defaults write NSGlobalDomain AppleLanguages -array "en" "de"
