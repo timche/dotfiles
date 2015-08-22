@@ -16,9 +16,9 @@ if [ "$1" == "--install" -o "$1" == "-i" ]; then
     # install homebrew and cask
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew install caskroom/cask/brew-cask;
-    source ./.osx;
     source ./.brews;
     source ./.casks;
+    source ./.osx;
     doIt;
     unset doIt;
     exit 0;
