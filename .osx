@@ -129,6 +129,9 @@ chflags nohidden ~/Library
 # Show hidden Files
 defaults write com.apple.finder AppleShowAllFiles NO
 
+# Disable Desktop
+defaults write com.apple.finder CreateDesktop -boolean false
+
 # --------------------------------------------------
 # Dock & Mission Control
 # --------------------------------------------------
