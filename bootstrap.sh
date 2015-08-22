@@ -5,8 +5,8 @@ xcode-select --install;
 
 function doIt() {
     rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh"\
-    --exclude ".osx" --exclude ".brews" --exclude ".casks"\
-    --exclude "README.md" --exclude "Vagrantfile" --exclude "LICENSE" -avh --no-perms . ~;
+    --exclude ".osx" --exclude ".brews" --exclude ".casks" --exclude ".terminal-themes/"\ 
+    --exclude "README.md" --exclude ".vagrant.sh" --exclude ".gitignore" --exclude "LICENSE" -avh --no-perms . ~;
     source ~/.bash_profile;
 }
 
