@@ -17,6 +17,7 @@ brew install wget --with-iri
 
 # Tools
 brew install git
+brew install tree
 
 # Runtimes and Langs
 brew install node
