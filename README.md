@@ -8,7 +8,7 @@ My personal dotfiles to setup my OS X machine.
 
 2. `cd` to the `dotfiles-master` folder.
 
-3. Run `$ ./bootstrap.sh` to install the dotfiles.
+3. Run `./bootstrap.sh` to install the dotfiles.
 
 ## Credits
 
