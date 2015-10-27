@@ -84,3 +84,16 @@ alias cdfp='cd "$(fp)"'
 function cdf() { # short for `cdfinder`
     cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
 }
+
+#---------------------------------------------------
+# hub
+#---------------------------------------------------
+
+alias git="hub"
+
+#---------------------------------------------------
+# work
+#---------------------------------------------------
+
+alias timche="cd ~/GitHub/timche/"
+alias newstore="cd ~/GitHub/NewStore/"
