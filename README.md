@@ -12,4 +12,4 @@ My personal dotfiles to setup my OS X machine.
 
 ## Credits
 
-Inspiration by [RobinThrift/Dotfiles](https://github.com/RobinThrift/Dotfiles) & [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles).
+Inspired by [RobinThrift/Dotfiles](https://github.com/RobinThrift/Dotfiles) & [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles).
