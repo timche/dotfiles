@@ -26,7 +26,7 @@ alias ll="ls -Gl" # long list, excludes dot files
 alias lla="ls -Gla" # long list all, includes dot files
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; sudo npm install npm@latest -g; sudo npm update -g; sudo gem update --system; sudo gem update'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
