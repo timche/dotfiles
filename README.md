@@ -1,4 +1,4 @@
-# dotfiles
+# timche's Dotfiles
 
 My personal dotfiles to setup my OS X machine.
 
@@ -12,4 +12,4 @@ My personal dotfiles to setup my OS X machine.
 
 ## Credits
 
-Inspiration from [RobinThrift/Dotfiles](https://github.com/RobinThrift/Dotfiles) and [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles).
+Inspiration by [RobinThrift/Dotfiles](https://github.com/RobinThrift/Dotfiles) & [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles).
