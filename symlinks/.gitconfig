@@ -1,0 +1,12 @@
+[init]
+  templatedir = ~/.git_templates
+
+[user]
+	name = Tim Cheung
+	email = tim@cheung.io
+
+[core]
+	editor = vim
+
+[help]
+  autocorrect = 1
