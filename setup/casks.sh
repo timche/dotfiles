@@ -12,6 +12,7 @@ brew cask install alfred
 brew cask install atom
 brew cask install caprine
 brew cask install discord
+brew cask install flux
 brew cask install font-hack
 brew cask install font-source-code-pro
 brew cask install google-chrome
