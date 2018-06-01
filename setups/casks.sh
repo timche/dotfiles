@@ -20,6 +20,8 @@ brew cask install hyper
 brew cask install slack
 brew cask install spotify
 brew cask install steam
+brew cask install teamspeak-client
 brew cask install telegram
+brew cask install vnc-viewer
 brew cask install whatsapp
 brew cask install vlc

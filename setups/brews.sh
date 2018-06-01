@@ -14,6 +14,7 @@ brew upgrade --all
 
 # Install
 brew install git
+brew install neovim
 brew install node
 brew install yarn
 brew install z
