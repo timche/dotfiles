@@ -14,8 +14,11 @@ brew upgrade --all
 
 # Install
 brew install git
+brew install hub
 brew install neovim
 brew install node
+brew install streamlink
+brew install tree
 brew install wget
 brew install yarn
 brew install z
