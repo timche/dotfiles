@@ -17,6 +17,7 @@ brew cask install font-hack
 brew cask install font-source-code-pro
 brew cask install google-chrome
 brew cask install hyper
+brew cask install scroll-reverser
 brew cask install slack
 brew cask install spotify
 brew cask install steam

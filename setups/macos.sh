@@ -76,11 +76,21 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # --------------------------------------------------
+# Mouse Settings
+# --------------------------------------------------
+
+# Disable mouse acceleration
+defaults write -g com.apple.mouse.scaling -1
+
+# --------------------------------------------------
 # Keyboard
 # --------------------------------------------------
 
-# Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+# Set keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Set keyboard repeat delay
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -232,15 +242,6 @@ defaults write com.apple.TextEdit RichText -int 0
 # Open and save files as UTF-8 in TextEdit
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
-
-# --------------------------------------------------
-# Privacy
-# --------------------------------------------------
-
-# Fix Mac OS X
-wget https://fix-macosx.com/fix-macosx.py
-python fix-macosx.py
-rm fix-macosx.py
 
 # --------------------------------------------------
 # Kill affected Applications

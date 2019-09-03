@@ -106,4 +106,25 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 # Dokku
-alias dokku="ssh -t dokku@timche.xyz"
+alias dokku="ssh -t dokku@monkas.rip"
+
+# hub
+alias git="hub"
+
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# Yarn
+alias y="yarn"
+
+# Google Cloud SDK
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+# added by travis gem
+[ -f /Users/timche/.travis/travis.sh ] && source /Users/timche/.travis/travis.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/timche/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/timche/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/timche/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/timche/google-cloud-sdk/completion.zsh.inc'; fi
