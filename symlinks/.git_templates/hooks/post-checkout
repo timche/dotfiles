@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-# adapted from https://orrsella.com/2013/08/10/git-using-different-user-emails-for-different-repositories/
+# Adapted from https://orrsella.com/2013/08/10/git-using-different-user-emails-for-different-repositories/
 
-# CONFIG
+# Config
 name="Tim Cheung"
 personal_email="tim@cheung.io"
 
-work_remote="faceit"
+work_git_remote_url_partial="faceit"
 work_email="t.cheung@faceit.com"
 
 setIdentity() {
@@ -26,13 +26,12 @@ setIdentity() {
     return 0
 }
 
-
 current_remote_url="$(git config --get --local remote.origin.url)"
 
 # Disable case sensitivity for regex matching
 shopt -s nocasematch
 
-if [[ "$current_remote_url" =~ $work_remote ]]; then
+if [[ "$current_remote_url" =~ $work_git_remote_url_partial ]]; then
     setIdentity "${work_email}"
     exit 0
 else

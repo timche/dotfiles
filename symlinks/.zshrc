@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # .zshrc
 alias zshrc="vim ~/.zshrc"
 
-# .zshrc
+# Hyper
 alias hyperjs="vim ~/.hyper.js"
 
 # zsh-syntax-highlighting
