@@ -17,14 +17,14 @@ brew cask install handbrake
 brew cask install hyper
 brew cask install istat-menus
 brew cask install kap
+brew cask install nordvpn
 brew cask install postman
-brew cask install sensiblesidebuttons
 brew cask install scroll-reverser
+brew cask install sensiblesidebuttons
 brew cask install slack
 brew cask install spotify
 brew cask install steam
 brew cask install teamspeak-client
-brew cask install tunnelblick
 brew cask install usb-overdrive
 brew cask install visual-studio-code
 brew cask install vlc
