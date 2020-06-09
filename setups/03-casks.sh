@@ -23,6 +23,7 @@ brew cask install hyper
 brew cask install kap
 brew cask install nordvpn
 brew cask install postman
+brew cask install rectangle
 brew cask install slack
 brew cask install spotify
 brew cask install steam
