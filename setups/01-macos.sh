@@ -2,7 +2,7 @@
 # OSX SETTINGS
 # --------------------------------------------------
 
-#!/usr/bin/env bash
+#!/bin/bash
 
 # ~/.osx — https://mths.be/osx
 
@@ -10,7 +10,11 @@
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+	sudo -n true
+	sleep 60
+	kill -0 "$$" || exit
+done 2>/dev/null &
 
 # --------------------------------------------------
 # General
@@ -248,7 +252,7 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 # --------------------------------------------------
 
 for app in "Activity Monitor" "cfprefsd" \
-        "Dock" "Finder" "Safari" "SystemUIServer"; do
-    killall "${app}" > /dev/null 2>&1
+	"Dock" "Finder" "Safari" "SystemUIServer"; do
+	killall "${app}" >/dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
