@@ -128,3 +128,6 @@ if [ -f '/Users/timche/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/timche/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/timche/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/timche/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Kill all node processes
+alias killnode="killall -9 node"
