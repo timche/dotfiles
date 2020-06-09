@@ -14,7 +14,7 @@ done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install
 brew install git

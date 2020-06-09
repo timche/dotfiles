@@ -94,19 +94,18 @@ alias hyperjs="vim ~/.hyper.js"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Z
-. `brew --prefix`/etc/profile.d/z.sh
+. $(brew --prefix)/etc/profile.d/z.sh
 
 # Pure
-autoload -U promptinit; promptinit
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit
+promptinit
 prompt pure
 
 # Neovim
-if type nvim > /dev/null 2>&1; then
+if type nvim >/dev/null 2>&1; then
   alias vim="nvim"
 fi
-
-# Dokku
-alias dokku="ssh -t dokku@monkas.rip"
 
 # hub
 alias git="hub"
@@ -115,19 +114,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # Yarn
 alias y="yarn"
-
-# Google Cloud SDK
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-
-# added by travis gem
-[ -f /Users/timche/.travis/travis.sh ] && source /Users/timche/.travis/travis.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/timche/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/timche/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/timche/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/timche/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Kill all node processes
 alias killnode="killall -9 node"
