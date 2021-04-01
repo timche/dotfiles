@@ -53,6 +53,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Use dark menu bar and dock
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
+# Disable font smoothing (on Non-Retina displays)
+# defaults -currentHost write -g AppleFontSmoothing -int 0
+
 # --------------------------------------------------
 # Menu Bar
 # --------------------------------------------------
