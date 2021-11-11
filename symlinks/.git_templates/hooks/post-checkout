@@ -6,8 +6,8 @@
 name="Tim Cheung"
 personal_email="tim@cheung.io"
 
-work_git_remote_url_partial="faceit/"
-work_email="t.cheung@faceit.com"
+work_git_remote_url_partial="deliveroo/"
+work_email="tim.cheung@deliveroo.co.uk"
 
 setIdentity() {
     local current_email local_email
