@@ -18,16 +18,9 @@ brew upgrade
 
 # Install
 brew install git
-brew install docker-machine
-brew install go
 brew install hub
-brew install neovim
-brew install node
-brew install streamlink
+brew install pure
 brew install tree
-brew install wget
-brew install yarn
-brew install youtube-dl
 brew install z
 brew install zsh
 brew install zsh-syntax-highlighting

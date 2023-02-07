@@ -13,7 +13,6 @@ done 2>/dev/null &
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Pure Prompt (https://github.com/sindresorhus/pure)
-mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
-fpath+=$HOME/.zsh/pure
+# Plugins
+git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git -~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
