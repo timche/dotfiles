@@ -13,12 +13,10 @@ done 2>/dev/null &
 # Install
 brew install 1password
 brew install alfred
-brew install caprine
 brew install discord
 brew install docker
 brew install flux
 brew install google-chrome
-brew install handbrake
 brew install hyper
 brew install kap
 brew install nordvpn
