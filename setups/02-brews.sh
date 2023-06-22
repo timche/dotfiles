@@ -23,9 +23,7 @@ brew install pnpm
 brew install powerlevel10k
 brew install tree
 brew install yarn
-brew install z
 brew install zsh
-brew install zsh-syntax-highlighting
 
 # Cleanup after yourself!
 brew cleanup
