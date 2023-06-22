@@ -19,8 +19,10 @@ brew upgrade
 # Install
 brew install git
 brew install hub
-brew install pure
+brew install pnpm
+brew install powerlevel10k
 brew install tree
+brew install yarn
 brew install z
 brew install zsh
 brew install zsh-syntax-highlighting
