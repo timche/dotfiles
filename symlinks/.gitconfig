@@ -12,3 +12,5 @@
 	rebase = true
 [push]
 	autoSetupRemote = true
+[hub]
+	protocol = ssh
