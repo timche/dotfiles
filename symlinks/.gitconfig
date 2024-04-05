@@ -1,16 +1,29 @@
 [init]
-  templatedir = ~/.git_templates
+  	templatedir = ~/.git_templates
 	defaultBranch = main
 
 [user]
 	name = Tim Cheung
 	email = tim@cheung.io
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJy1WybfJKS9JAsRkQWYU36a8PXnEapCQ1iHaKz2dH9X
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [core]
 	editor = vim
+
 [pull]
 	rebase = true
+
+[commit]
+	gpgsign = true
+
 [push]
 	autoSetupRemote = true
+
 [hub]
 	protocol = ssh
