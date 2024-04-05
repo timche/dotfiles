@@ -10,6 +10,9 @@ while true; do
   kill -0 "$$" || exit
 done 2>/dev/null &
 
+# Disable Analytics
+brew analytics off
+
 # Make sure we’re using the latest Homebrew.
 brew update
 

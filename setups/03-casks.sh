@@ -16,10 +16,9 @@ brew install alfred
 brew install discord
 brew install --cask docker
 brew install firefox
-brew install firefox-developer-edition
-brew install flux
+brew install --cask flux
 brew install google-chrome
-brew install handbrake
+brew install --cask handbrake
 brew install hyper
 brew install kap
 brew install nordvpn
