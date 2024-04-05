@@ -15,15 +15,18 @@ brew install 1password
 brew install alfred
 brew install discord
 brew install --cask docker
-brew install figma
+brew install firefox
+brew install firefox-developer-edition
 brew install flux
 brew install google-chrome
+brew install handbrake
 brew install hyper
 brew install kap
-brew install postman
+brew install nordvpn
 brew install rectangle
+brew install rekordbox
 brew install spotify
+brew install teamspeak-client
 brew install visual-studio-code
 brew install vlc
 brew install whatsapp
-brew install zoom

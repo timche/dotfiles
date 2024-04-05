@@ -10,7 +10,7 @@
 1. Run files in `setups` in order
    - Example: `./setups/01-macos.sh`
 1. Symlink files in `symlinks`
-   - Example: `ln -sf Workspace/dotfiles/symlinks/.gitconfig .gitconfig`
+   - Example: `ln -sf ~/GitHub/dotfiles/symlinks/.gitconfig ~/.gitconfig`
 
 ## Additional Software from Elsewhere
 

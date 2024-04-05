@@ -11,6 +11,6 @@ while true; do
 done 2>/dev/null &
 
 # Extensions
-code --install-extension esbenp.prettier-vscode
+code --install-extension biomejs.biome
 code --install-extension bradlc.vscode-tailwindcss
-code --install-extension prisma.prisma
+code --install-extension zhuangtongfa.material-theme

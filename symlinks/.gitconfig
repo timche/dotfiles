@@ -1,5 +1,4 @@
 [init]
-  	templatedir = ~/.git_templates
 	defaultBranch = main
 
 [user]

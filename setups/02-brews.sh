@@ -19,10 +19,8 @@ brew upgrade
 # Install
 brew install git
 brew install hub
-brew install pnpm
 brew install powerlevel10k
 brew install tree
-brew install yarn
 brew install zsh
 
 # Cleanup after yourself!
