@@ -1,28 +1,25 @@
 [init]
-	defaultBranch = main
+defaultBranch = main
 
 [user]
-	name = Tim Cheung
-	email = tim@cheung.io
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJy1WybfJKS9JAsRkQWYU36a8PXnEapCQ1iHaKz2dH9X
+name = Tim Cheung
+email = tim@cheung.io
+signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJy1WybfJKS9JAsRkQWYU36a8PXnEapCQ1iHaKz2dH9X
 
 [gpg]
-	format = ssh
+format = ssh
 
 [gpg "ssh"]
-	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [core]
-	editor = vim
+editor = vim
 
 [pull]
-	rebase = true
+rebase = true
 
 [commit]
-	gpgsign = true
+gpgsign = true
 
 [push]
-	autoSetupRemote = true
-
-[hub]
-	protocol = ssh
+autoSetupRemote = true

@@ -20,11 +20,41 @@ brew update
 brew upgrade
 
 # Install
+brew install bun
+brew install fnm
 brew install git
-brew install hub
-brew install powerlevel10k
-brew install tree
+brew install gh
+brew install starship
+brew install wakeonlan
 brew install zsh
+brew install z
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
+
+# Casks
+brew install 1password
+brew install 1password-cli
+brew install alfred
+brew install discord
+brew install --cask docker
+brew install firefox
+brew install firefox@developer-edition
+brew install --cask flux
+brew install ghostty
+brew install google-chrome
+brew install --cask handbrake
+brew install insomnia
+brew install kap
+brew install nordvpn
+brew install notunes
+brew install orbstack
+brew install rectangle
+brew install scroll-reverser
+brew install spotify
+brew install --cask tailscale
+brew install teamspeak-client
+brew install visual-studio-code
+brew install whatsapp
 
 # Cleanup after yourself!
 brew cleanup

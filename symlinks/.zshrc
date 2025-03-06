@@ -1,32 +1,41 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+autoload -Uz +X compinit && compinit
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+## case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' menu select
 
-# Set name of the theme to load.
-ZSH_THEME="powerlevel10k/powerlevel10k"
+eval "$(starship init zsh)"
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-HYPHEN_INSENSITIVE="true"
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Which plugins would you like to load?
-plugins=(git z zsh-nvm zsh-syntax-highlighting)
+. $HOMEBREW_PREFIX/etc/profile.d/z.sh
 
-source $ZSH/oh-my-zsh.sh
+alias g='git'
+alias ga='git add'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gcp='git cherry-pick'
+alias gcpa='git cherry-pick --abort'
+alias gcpc='git cherry-pick --continue'
+alias gclean='git clean --interactive -d'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gm='git merge'
+alias gma='git merge --abort'
+alias gmc='git merge --continue'
+alias gpr='git pull --rebase'
+alias grb='git rebase'
+alias grba='git rebase --abort'
+alias grbc='git rebase --continue'
+alias grbi='git rebase --interactive'
+alias gst='git status'
+alias glg='git log --stat'
+alias glog='git log --oneline --decorate --graph'
+alias gp='git push'
+alias gl='git pull'
+alias gcmsg='git commit --message'
+alias gc='git commit --verbose'
+alias gcn!='git commit --verbose --no-edit --amend'
 
-# User configuration
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# hub
-alias git="hub"
-
-# Kill all node processes
-alias killnode="killall -9 node"
+alias ..='cd ..'
