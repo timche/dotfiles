@@ -16,11 +16,12 @@
 - Once a PR is open, add commits; never amend. Force-push only after a rebase.
 - Share the PR link on open and update; with multiple PRs, list them in the
   order they should be reviewed.
-- Title and description describe the branch as it is now: the problem, what
-  changed, risks, omissions, what wasn't verified. Bullets, not prose; don't
-  restate the diff.
-- End with a numbered Test plan: steps with expected outcomes, covering edge
-  cases. Ask rather than invent steps you can't verify.
+- Keep the description short and to the point, describing the branch as it is
+  now: a handful of bullets on what changed, then anything that bites — a risk,
+  an omission, what wasn't verified — in a line or two. No section headings for
+  one-liners, no prose, don't restate the diff.
+- End with a numbered Test plan of 2–4 steps with expected outcomes: only what
+  isn't obvious from the change. Ask rather than invent steps you can't verify.
 - Build stacked PRs with `gh stack`, never by chaining `--base` and rebasing by
   hand. Run `gh stack sync` after anything below lands on main.
 - Check `gh extension list` before doing repetitive git or gh work manually.
