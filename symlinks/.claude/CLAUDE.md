@@ -14,6 +14,8 @@
 
 # Pull requests
 - Once a PR is open, add commits; never amend. Force-push only after a rebase.
+- Share the PR link on open and update; with multiple PRs, list them in the
+  order they should be reviewed.
 - Title and description describe the branch as it is now: the problem, what
   changed, risks, omissions, what wasn't verified. Bullets, not prose; don't
   restate the diff.
