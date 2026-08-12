@@ -2,6 +2,10 @@
 - Slice large features into small, self-contained changes that can be reviewed
   one at a time.
 
+# Decisions
+- New evidence doesn't transfer a decision to you: when findings say a chosen
+  approach can't work, report and recommend — never rewrite it unasked.
+
 # Branches and pushing
 - Cut a branch from freshly pulled main before the first edit of new work, on
   every change however small. Never gated by an ask — only pushing to main is.
