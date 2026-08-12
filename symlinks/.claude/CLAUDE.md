@@ -44,6 +44,12 @@
 - Read https://code.claude.com/docs/ before anything Claude Code related; never
   work from memory.
 
+# Environment
+- Sessions run in a remote sandbox; I connect over SSH (kept alive by herdr)
+  from devices that come and go. Local paths on my devices are unreachable —
+  ask for a URL or an inline paste instead. Pasted images are the exception:
+  they arrive as readable files.
+
 # Forks
 - Repos under `~/_forks/` are other people's — follow their conventions, not
   these; check CONTRIBUTING.md and recent history.
