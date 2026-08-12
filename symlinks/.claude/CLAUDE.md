@@ -7,7 +7,8 @@
   every change however small. Never gated by an ask — only pushing to main is.
 - Push to main only when asked; asks don't carry over.
 - Rebase onto latest main before pushing; never merge.
-- Push finished work and say the branch name.
+- Push finished work and say the branch name; repeat the branch name whenever
+  the branch updates.
 - Run the repo's type, format and lint checks before pushing.
 - Once work lands on main, delete the branch locally and on the remote without
   asking.
