@@ -55,6 +55,8 @@
   paths on the user's devices are unreachable — ask for a URL or an inline
   paste instead. Pasted images are the exception: they arrive as readable
   files.
+- Edits to this file are committed and pushed by a hook the moment you make
+  them — never offer to commit or push it, and don't mention it's uncommitted.
 
 # Forks
 - Repos under `~/_forks/` are other people's — follow their conventions, not
