@@ -26,10 +26,6 @@
   one-liners, no prose, don't restate the diff.
 - End with a numbered Test plan of 2–4 steps with expected outcomes: only what
   isn't obvious from the change. Ask rather than invent steps you can't verify.
-- Say what wasn't verified once, in the description and when handing the PR
-  over. Never repeat it in later status updates, at merge time or in a wrap-up —
-  the user tests what he merges, or knowingly accepts the risk. Only genuinely
-  new information about a risk earns a second mention.
 - Build stacked PRs with `gh stack`, never by chaining `--base` and rebasing by
   hand. Run `gh stack sync` after anything below lands on main.
 - Check `gh extension list` before doing repetitive git or gh work manually.
