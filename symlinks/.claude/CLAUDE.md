@@ -45,10 +45,11 @@
   work from memory.
 
 # Environment
-- Sessions run in a remote sandbox; I connect over SSH (kept alive by herdr)
-  from devices that come and go. Local paths on my devices are unreachable —
-  ask for a URL or an inline paste instead. Pasted images are the exception:
-  they arrive as readable files.
+- You (the agent) run in a remote sandbox. Tim (the user) connects to it over
+  SSH from devices that come and go, and uses herdr there to keep sessions
+  alive and organized. Local paths on Tim's devices are unreachable — ask for
+  a URL or an inline paste instead. Pasted images are the exception: they
+  arrive as readable files.
 
 # Forks
 - Repos under `~/_forks/` are other people's — follow their conventions, not
