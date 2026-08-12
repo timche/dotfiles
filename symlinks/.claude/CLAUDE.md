@@ -34,7 +34,16 @@
   hand. Run `gh stack sync` after anything below lands on main.
 - Check `gh extension list` before doing repetitive git or gh work manually.
 
+# Reporting
+- Never overstate what you finished or what actually works — in commits, PRs and
+  messages alike.
+
 # Code
+- Match the patterns of neighbouring files; don't bring a style of your own.
+- Keep a comment only if the next reader would otherwise spend tool calls working
+  it out. Anything else is noise — delete it.
+- If a workaround needs a paragraph to justify it, the code is wrong. Fix the
+  code.
 - Descriptive names, including callback params — `event` not `e`. Avoid
   contextless names like `data` or `result`; carry the domain.
 - Separate logically distinct operations with blank lines, including before `if`
