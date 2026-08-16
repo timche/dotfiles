@@ -15,7 +15,7 @@
      - Example: `mkdir -p ~/.ssh && ln -sf ~/GitHub/dotfiles/symlinks/.ssh/config ~/.ssh/config`
 
 Claude Code configuration lives in
-[timche/claude-dotfiles](https://github.com/timche/claude-dotfiles).
+[timche/claude-sandbox](https://github.com/timche/claude-sandbox).
 
 ## Additional Software from Elsewhere
 
