@@ -12,7 +12,10 @@
 1. Symlink files in `symlinks`
    - Example: `ln -sf ~/GitHub/dotfiles/symlinks/.gitconfig ~/.gitconfig`
    - Nested files need their parent directory to exist first
-     - Example: `mkdir -p ~/.claude && ln -sf ~/GitHub/dotfiles/symlinks/.claude/CLAUDE.md ~/.claude/CLAUDE.md`
+     - Example: `mkdir -p ~/.ssh && ln -sf ~/GitHub/dotfiles/symlinks/.ssh/config ~/.ssh/config`
+
+Claude Code configuration lives in
+[timche/claude-sandbox](https://github.com/timche/claude-sandbox).
 
 ## Additional Software from Elsewhere
 
