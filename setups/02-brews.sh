@@ -20,12 +20,11 @@ brew update
 brew upgrade
 
 # Install
-brew install bun
-brew install fnm
-brew install git
+brew install flyctl
 brew install gh
+brew install git
+brew install herdr
 brew install powerlevel10k
-brew install wakeonlan
 brew install zsh
 brew install z
 brew install zsh-syntax-highlighting
@@ -35,23 +34,23 @@ brew install 1password
 brew install 1password-cli
 brew install alfred
 brew install discord
-brew install --cask docker
 brew install firefox
 brew install firefox@developer-edition
-brew install --cask flux
 brew install ghostty
 brew install google-chrome
 brew install --cask handbrake
 brew install insomnia
 brew install kap
-brew install nordvpn
-brew install notunes
+brew install meru
+brew install mullvad-browser
+brew install mullvad-vpn
 brew install orbstack
 brew install rectangle
-brew install scroll-reverser
-brew install spotify
+brew install shottr
+brew install tableplus
 brew install --cask tailscale
 brew install teamspeak-client
+brew install utm
 brew install visual-studio-code
 brew install whatsapp
 

@@ -15,10 +15,7 @@ plugins=(git)
 
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
-export PYENV_ROOT="$HOME/.pyenv"
+# bun completions
+[ -s "/Users/timche/.bun/_bun" ] && source "/Users/timche/.bun/_bun"
 
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
-# Created by `pipx` on 2025-03-10 15:03:00
-export PATH="$PATH:$HOME/.local/bin"
+eval "$(/Users/timche/.local/bin/mise activate zsh)"
